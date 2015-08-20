@@ -9,7 +9,7 @@ main() {
 
 	mkdir -p "${repo_path}"
 	git clone "git@${host}:${username}/${repository}" "${repo_path}"
-	echo "layout go" > ".envrc"
+	echo "layout go" > "${repository}/.envrc"
 }
 
 main $@
